@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title> Html Forms </title>
+    </head>
+    <body>
+        <form oninput="c=parseInt(a.value)+parseInt(b.value)">
+            a 
+            <input type="number" name="a" id="a" step="2">
+            + b 
+            <input type="number" name="b" id="b"><br><br>
+            =
+            <output name="x" id="x" for="a b"></output>
+            <br><br>
+            <input type="button" value="Submit" onclick="alert"><br><br>
+            <label for="text1">First name</label>
+            <input type="text" value="Enter a String" name="Textfield1" id="text1"><br><br>
+            <label for="text1">Click the submit button to submit</label>
+            <input type="button" value="Submit" onclick="alert"><br><br>
+            <label for="radio1">RadioButtons</label><br>
+            <label for="radio1">pizza</label>
+            <input type="radio" name="RadioButton1" id="radio1"><br>
+            <label for="radio2">burger</label>
+            <input type="radio" name="RadioButton1" id="radio2"><br><br>
+            <label for="Delhi">Checkboxes</label><br>
+            <label for="Delhi">Delhi</label>
+            <input type="checkbox" name="checkbox1" id="Delhi"><br>
+            <label for="Faridabad">Faridabad</label>
+            <input type="checkbox" name="checkbox1" id="Faridabad"><br><br>
+            <label for="city1">list</label><br>
+            <select name="City" id="city1" multiple size="2">
+                <option value="gorakhpur">gorakhpur</option>
+                <option value="faridabad">faridabad</option>
+                <option value="gurgaon" selected>gurgaon</option>
+                <br><br>
+            </select>
+            <br><br>
+                <label for="textarea1">Click the submit button to submit</label>
+                <br><br>
+            <textarea name="textArea1" id="textarea1" rows="5" cols="10">Enter text in Textarea </textarea>
+            <input type="button" value="Submit" onclick="alert"><br><br>
+            <button type="button">My Button </button><br><br>
+            <label for="names">Fieldset</label><br><br>
+            <fieldset id="names" name="names">
+                <legend>Enter Name</legend>
+                <label for="text">Firstname</label>
+                <input type="text" name="text" id="text11"><br><br>
+                <label for="text">Midname</label>
+                <input type="text" name="text" id="text12"><br><br>
+                <label for="text">Lastname</label>
+                <input type="text" name="text" id="text13"><br><br>
+            </fieldset>
+            <label for="countrynames">DropDownList</label><br><br>
+            <input list="Country" name="CountryNames" id="countrynames">
+            <datalist id="Country">
+                <option value="India">India</option>
+                <option value="China">China</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="USA">USA</option>
+            </datalist>
+
+        </form>
+    </body>
+</html>
